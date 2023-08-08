@@ -1,0 +1,29 @@
+Object 1: Carboard boxes
+Property 1: Made of carboard
+Property 2: Used to ship snakes to the buyers
+Property 3: Used to send messages between departments
+Behavior 1: Transport snakes to their destinations
+Behavior 2: Be written on for messages between departments
+Behavior 3: Be of good quality
+
+Object 2: Carrier Snake
+Property 1: Is a snake that is meant for transporting messages
+Property 2: Travels with a piece of carboard that has a message attched to it
+Property 3: High-quality snake meant to show off how high-quality the products of the company is
+Behavior 1: Slithers from between departments
+Behavior 2: Transports messages between departments
+Behavior 3: Promote the selling of the otehr snakes at the company
+
+Object 3: Snake Box Factory
+Property 1: Makes carboard boxes
+Property 2: Produces high-quality items and animals
+Property 3: Sells high-quality snakes
+Behavior 1: Shows off how high-quality the snakes they sell are
+Behavior 2: Uses carrier snakes to promote selling their regular snakes
+Behavior 3: Instead of paper they use carboard to promote the carboard boxes they sell too
+
+Precondition 1: Must be a digital form of messaging between departments 
+Precondition 2: Must be conventional
+
+Postcondition 1: Must make an idea for the messaging software for the Snake Box Factory 
+Postcondition 2: The software must work and be able to send messages between departments as it is supposed to do
