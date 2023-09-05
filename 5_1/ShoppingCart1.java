@@ -1,5 +1,4 @@
-public class ShoppingCart {
-
+public class ShoppingCart1 {
     public static void main(String[] args) {
         String custName = "Mary Smith";
         String itemDesc = "Shirt";
@@ -16,17 +15,19 @@ public class ShoppingCart {
 
         
         // Declare outOfStock variable and initialize it
-        
+        boolean outOfStock = true;
         
         // Test quantity and modify message if quantity > 1.  
-         
+         if (quantity > 1) {
+            message += "s";
+         }
         
         // Test outOfStock and notify user in either case.  
-        
-        
-        
-    }
-    
+        if (outOfStock) {
+            System.out.println("We are sorry dear customer but the item you wish to purchase is out of stock.");
+        } else {
+            System.out.println(message);
+            System.out.println("The total is: $" + total);
+        }   
+    }   
 }
-
-
