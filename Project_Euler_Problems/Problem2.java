@@ -2,15 +2,16 @@ public class Problem2 {
     public static void main(String[] args) {
         int refusePile = 0;
         int totalNumber = 0;
-        for (int i = 1; i < 4_000_000; i++ ) {
-            int numA = i;
-            int numB;
-            if ((numA % 2) == 0 && i < 4_000_000) {
-                totalNumber += i;
-            } else {
-                refusePile += i;
+        int numA = 1;
+        int numB = 1;
+        int numC = numA + numB;
+        while(numC < 4_000_000) {
+            if ((numC % 2) == 0) {
+                totalNumber += numC;
             }
-            numB = numA;
+            numA = numB;
+            numB = numC;
+            numC = numA + numB;
         }
         System.out.println(totalNumber);
     }
