@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Terminals {
     Scanner sc = new Scanner(System.in);
     int money = 0;
@@ -16,3 +16,4 @@ public class Terminals {
         System.out.println("The card : " + card.getCardNumber() + " currently has " + card.getCurrentCreditBalance() + " credits currently.");
     }
 }
+*/
