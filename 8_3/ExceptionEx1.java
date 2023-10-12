@@ -11,7 +11,9 @@ public class ExceptionEx1 {
 
         for (int i = 0; i < vals.length; i++) {
             int index = vals[i];
-            total += vals[index];
+            if(index < vals.length){
+                total += vals[index];
+            }
         }
          System.out.println(total);
     }

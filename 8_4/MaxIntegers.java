@@ -4,15 +4,15 @@ public class MaxIntegers {
         int num1 = 3, num2 = 3, num3 = 3;
         int max = 0;
        
-        if (num1 > num2 && num1 > num3) {
+        if (num1 > max) {
             max = num1; 
         }
        
-        if (num2 > num1 && num2 > num3) {
+        if (num2 > max) {
             max = num2; 
         }
        
-        if (num3 > num1 && num3 > num2) {
+        if (num3 > max) {
                max = num3;
         }
      

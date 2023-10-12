@@ -1,0 +1,15 @@
+public class ShoppingCart8_3 {
+
+    public static void main(String[] args) {
+        Calculator8_3 calc = new Calculator8_3();
+        int addResult = calc.add(43, 79);
+        System.out.println("Add Result: " + addResult);
+        try {
+            double divResult = calc.divide(15, 0);
+            System.out.println("Division Result: " + divResult);  
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+    }
+}
