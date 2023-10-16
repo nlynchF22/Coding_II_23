@@ -1,12 +1,22 @@
 import java.util.ArrayList;
 public class Team {
-    ArrayList<Team> teams = new ArrayList<Team>();
-    private int totalWins = 0;
-    private int totalLosses = 0;
-    private int totalTies = 0;
-    private int totalGoalsScored = 0;
-    private int totalGoals = 0;
-    private String teamName = "";
+    public static ArrayList<Team> teams = new ArrayList<Team>();
+    private int totalWins;
+    private int totalLosses;
+    private int totalTies;
+    private int totalGoalsScored;
+    private int totalGoalsAllowed;
+    private String teamName;
+    public Team(String teamName){
+        this.teamName = teamName;
+        totalWins = 0;
+        totalLosses = 0;
+        totalTies = 0;
+        totalGoalsScored = 0;
+        totalGoalsAllowed = 0;
+        teams.add(this);
+    }
+
     public String getTeamName() {
         return teamName;
     }
@@ -37,20 +47,17 @@ public class Team {
     public void setTotalGoalsScored(int totalGoalsScored) {
         this.totalGoalsScored = totalGoalsScored;
     }
-    public int getTotalGoals() {
-        return totalGoals;
+    public int getTotalGoalsAllowed() {
+        return totalGoalsAllowed;
     }
-    public void setTotalGoals(int totalGoals) {
-        this.totalGoals = totalGoals;
+    public void setTotalGoalsAllowed(int totalGoals) {
+        this.totalGoalsAllowed = totalGoals;
     }
-    public Team(String teamName){
-        this.teamName = teamName;
-        teams.add(this);
-    }
+    
 
     public void displayTeam(){
         System.out.println("Name: " + teamName);
         System.out.println("Wins: " + totalWins + ", Losses: " + totalLosses + ", Ties: " + totalTies);
-        System.out.println("Points Scored: " + totalGoalsScored + ", Points Allowed: " + totalGoals);
+        System.out.println("Points Scored: " + totalGoalsScored + ", Points Allowed: " + totalGoalsAllowed);
     }
 }
